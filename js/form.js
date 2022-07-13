@@ -43,7 +43,7 @@ function outputFormDataToHtml(userData) {
   // sukurti paragrafa
   const pEl = document.createElement('p');
   // irasyti reiksme
-  pEl.textContent = `Forma issiusta. Vartotojo vardas: <strong>${userData.username}</strong> ir vartojas yra ${userData.age} metu amziaus`;
+  pEl.textContent = `Forma issiusta. Vartotojo vardas: ${userData.username} ir vartojas yra ${userData.age} metu amziaus`;
   // patalpinti cardEL
   cardEl.append(pEl);
 }
