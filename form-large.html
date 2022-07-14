@@ -12,11 +12,58 @@
 
   <body>
     <div class="container">
-      <h1>Lets Form uzd</h1>
+      <h1>Kaip pasiimti value is radio btn</h1>
 
       <input type="text" id="ivesk" placeholder="vesk" />
 
       <h2 id="card"></h2>
+
+      <form id="radioForm">
+        <fieldset class="flex">
+          <legend>Your gender</legend>
+          <div>
+            <input
+              type="radio"
+              name="gender"
+              id="male"
+              value="male"
+              checked
+              required
+            />
+            <label for="male">Male</label>
+          </div>
+          <div>
+            <input
+              type="radio"
+              name="gender"
+              id="female"
+              value="female"
+              required
+            />
+            <label for="female">Female</label>
+          </div>
+        </fieldset>
+        <fieldset id="colors" class="flex">
+          <legend>Spalvos</legend>
+          <div>
+            <input type="checkbox" name="color" id="green" value="green" />
+            <label for="green">Green</label>
+          </div>
+          <div>
+            <input type="checkbox" name="color" id="red" value="red" />
+            <label for="red">Red</label>
+          </div>
+          <div>
+            <input type="checkbox" name="color" id="yellow" value="yellow" />
+            <label for="yellow">Yellow</label>
+          </div>
+        </fieldset>
+        <div class="flex">
+          <input type="checkbox" id="terms" value="terms" />
+          <label for="terms">Agree with term and conditions</label>
+        </div>
+        <button disabled id="sub" type="submit">Siusti</button>
+      </form>
     </div>
   </body>
 </html>
